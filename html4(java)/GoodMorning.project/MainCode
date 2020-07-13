@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Good Morning</title>
+    <script language="javascript" src="kartFunctionPack.js">
+        //document.bgColor = "#CEF6F5";
+    </script>
+    <style type="text/css">
+    <!--
+    body {
+        scrollbar-face-color:#ffccff;
+        scrollbar-arrow-color:#ff0099;
+        scrollbar-track-color:#ff99cc;
+        scrollbar-highlight-color:#ff0099;
+        scrollbar-3dlight-color:#ff0099;
+        scrollbar-shadow-color:#ff0099;
+        scrollbar-darkshadow-color:#ff0099;
+    }
+    .text002top{
+    text-align:center;
+    font-size:20pt;
+    line-height:0%;
+    //padding:0px 0px 0px 0px;
+    }
+    .text002date{
+    text-align:center;
+    font-size:50pt;
+    line-height:0px;
+    //letter-spacing:5pt; 뭔가 더러워보여
+    //padding:0px 0px 0px 0px;
+    }
+    -->
+    </style>
+</head>
+<body>
+<script language="javascript">
+    //<!--
+
+
+
+    //목차
+    //000. 변수 선언부분
+    //001. 시간에 따른 배경과 글자색 변경
+    //
+
+    // 000. 변수 선언 부분
+    // 코드 용량 줄인답시고 여기에 공통되는 변수 다 때려박으면 스파게티 코드가 되어버립니다.
+    // 웬만해서는 그 부분에서만 사용될 매니악한 변수는 그 부분에서 선언하는게 옳다고 봅니다.
+
+
+
+    // 001. 시간에 따른 배경과 글자색 변경
+    // 오늘의 시간을 구합니다.
+    today000 = new Date();
+    var hour = today000.getHours();
+
+    // 시간에 따른 배경과 글자색을 변경하는 조건문입니다.
+    if(hour > 6 && hour <18) {
+    document.bgColor = "#CEF6F5";
+    document.fgColor = "#000000";
+    }
+    else {
+    document.bgColor = "#0B243B";
+    document.fgColor = "#FFFFFF";
+    }
+
+
+    // 002. 오늘 년도, 날짜, 요일을 알려주는 프로그램 작성
+    // 오늘 날짜에 대한 변수를 선언하고 초기화합니다.
+    today002 = new Date();
+    year002 = today002.getYear();
+    month002 = today002.getMonth() + 1;
+    date002 = today002.getDate(); // 날짜
+    day002 = today002.getDay(); // 요일
+
+    if (year002 < 2000) year002 += 1900;
+
+    document.write("스크립트를 생성하여 봅시다");
+    document.write("<br>");
+    document.write("<center>");
+    </script>
+    <script src="dateTable.js"></script>
+    <script language="javascript">
+
+    document.write("<br>");
+    document.write("<table border=1>");
+
+    document.write("</table>");
+    document.write("</center>");
+    입력("");
+    입력("활동 제목: 프로그래밍 기초");
+    입력("구체적인 활동: ??");
+    입력("활동 목표: ??");
+    입력("");
+    입력("활동 제목: 운전면허");
+    입력("구체적인 활동: 실기 공부하기");
+    입력("활동 목표: 합격");
+    입력("");
+    입력("활동 제목: 몹 시티 Bygones");
+    입력("구체적인 활동: 루트 완성, 큰 덩어리로 플롯 쪼개기, 각 플롯당 구체적인 완성");
+    입력("활동 목표: 스토리 완성");
+    입력("");
+    입력("활동 제목: 코딩");
+    입력("구체적인 활동: 매일 할당량 공부 약 40페이지");
+    입력("활동 목표: 이번달 이것이 C#이다 다 떼기");
+    입력("");
+    입력("활동 제목: 토익");
+    입력("구체적인 활동: 매일 15문제씩 풀고 리뷰");
+    입력("활동 목표: 완료");
+    입력("");
+    입력("활동 제목: 그림");
+    입력("구체적인 활동: 매일 1시간씩 그리기");
+    입력("활동 목표: 스토리 완성");
+    입력("");
+    입력("활동 제목:");
+    입력("구체적인 활동:");
+    입력("활동 목표:");
+    //-->
+    </script>
+
+</body>
+</html>
